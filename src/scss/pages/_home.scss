@@ -1,0 +1,53 @@
+.home{
+    width : 100%;
+    
+    .stats{
+        margin : 1em 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        h1{
+            font-size: 1.7em;
+            letter-spacing: 2px;
+            transition: all 0.3s;
+        }
+        .sale{
+            color: darken($bg_green_color,10%);
+        }
+        .purchase{
+            color : darken($bg_yellow_color , 20%);
+        }
+        .loss{
+            color : darken($bg_danger_color , 10%);
+        }
+        .profit{
+            color: darken($bg_green_color,10%);
+        }
+    }
+    .records{
+        width : 100%;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        .record-menu{
+            background-color: rgba($bg_green_color,0.5);
+            width: 40%;
+            padding : 1em 0;
+            text-align: center;
+            border-radius: 0.2em;
+            -webkit-box-shadow: 3px 4px 5px 0px rgba(darken($bg_green_color , 20%),0.41);
+            -moz-box-shadow: 3px 4px 5px 0px rgba(darken($bg_green_color , 20%),0.41);
+            box-shadow: 3px 4px 5px 0px rgba(darken($bg_green_color , 20%),0.41);
+            a{
+                margin : 1em 2em;
+                transition: all 0.3s;
+            }
+            .on{
+                color: darken($bg_green_color,20%);
+            }
+        }
+        .route{
+            width : 100%;
+        }
+    }
+}

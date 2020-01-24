@@ -1,0 +1,8 @@
+const vendorTypes = {
+    ALL_VENDORS_START :'ALL_VENDORS_START',
+    ALL_VENDORS_SUCCESS : 'ALL_VENDORS_SUCCESS',
+    ALL_VENDORS_ERROR : 'ALL_VENDORS_ERROR',
+    CHOOSE_VENDOR : 'CHOOSE_VENDOR',
+}
+
+export default vendorTypes;

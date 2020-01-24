@@ -1,0 +1,13 @@
+.login-form{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    .register-link{
+        display: flex;
+        justify-content: space-between;
+        p{
+            color: $bg_dark_color;
+        }
+    }
+}

@@ -1,0 +1,54 @@
+@mixin gradientText {
+    width: fit-content;
+    background-image: linear-gradient(
+        to right,
+        $bg_light_color,
+        $bg_dark_color,
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    color: transparent;
+}
+
+@mixin button {
+    width : 300px;
+    font-size: 1.3em;
+    margin : 0.5em 0;
+    padding : 0.3em 0.5em;
+    font-family: $cursive_font;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+@mixin buttonPrimaryCick{
+    &:hover{
+        transform: translateY(-2px);
+        -webkit-box-shadow: 10px 10px 37px -14px rgba(16,29,66,1);
+        -moz-box-shadow: 10px 10px 37px -14px rgba(16,29,66,1);
+        box-shadow: 10px 10px 37px -14px rgba(16,29,66,1);
+    }
+
+    &:active{
+        transform: translateY(2px);
+        -webkit-box-shadow: 10px 10px 12px -8px rgba(16,29,66,0.63);
+        -moz-box-shadow: 10px 10px 12px -8px rgba(16,29,66,0.63);
+        box-shadow: 10px 10px 12px -8px rgba(16,29,66,0.63);
+    }
+}
+@mixin buttonDangerCick{
+    &:hover{
+        transform: translateY(-2px);
+        -webkit-box-shadow: 10px 10px 37px -14px rgba($bg_danger_color,1);
+        -moz-box-shadow: 10px 10px 37px -14px rgba($bg_danger_color,1);
+        box-shadow: 10px 10px 37px -14px rgba($bg_danger_color,1);
+    }
+
+    &:active{
+        transform: translateY(2px);
+        -webkit-box-shadow: 10px 10px 12px -8px rgba($bg_danger_color,0.63);
+        -moz-box-shadow: 10px 10px 12px -8px rgba($bg_danger_color,0.63);
+        box-shadow: 10px 10px 12px -8px rgba($bg_danger_color,0.63);
+    }
+}

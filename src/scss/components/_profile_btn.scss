@@ -1,0 +1,16 @@
+.profile-btn{
+    padding : 0.3em 0.5em;
+    font-size : 1.1em;
+    font-family: $cursive_font;
+    background-color: white;
+    color: $bg_light_color;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+    &:hover{
+        transform: translateY(-2px);
+    }
+    &:active{
+        transform: translateY(2px);
+    }
+}

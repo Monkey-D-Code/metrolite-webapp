@@ -1,0 +1,234 @@
+.outlet{
+    
+    width: 100%;
+    display: flex;
+    
+    align-items: flex-start;
+    h1{
+        margin : 0.3em auto;
+        font-size: 2.5em;
+    }
+    .all-outlets{
+        height: 100vh;
+        padding :  0 1em;
+        overflow: auto;
+        .list{
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            .single-outlet{
+                user-select: none;
+                cursor: pointer;
+                width : 300px;
+                margin : 0.5em 0;
+                transition: all 0.5s;
+                position: relative;
+                &:hover{
+                    background-color: $bg_dark_color;
+                    transform: translateY(-5px);
+                    .info{
+                        h4{
+                            color : white;
+                            
+                        }
+                        p{
+                            color : white;
+                        }
+                    }
+                }
+                &:active{
+                    transform: translateY(5px);
+                }
+                
+                img{
+                    width: 300px;
+                    height: 150px;
+                    object-fit: cover;
+                }
+                .selected{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 300px;
+                    height: 150px;
+                    background-color: rgba($bg_green_color, 0.8);
+                    h4{
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%,-50%);
+                        font-family: $heading_font_1;
+                        color: white;
+                        font-size: 2em;
+                        letter-spacing: 1px;
+                    }
+                }
+                .info{
+                    h4{
+                        font-family: $cursive_font;
+                        color: $bg_light_color;
+                        padding : 0.3em 0.4em;
+                        
+                    }
+                    .contact{
+                        display: flex;
+                        margin : 0.2em 0;
+                        padding : 0.3em 0.4em;
+                        i{
+                            margin-right : 0.3em;
+                        }
+                    }
+                    .address{
+                        display: flex;
+                        padding : 0.3em 0.4em;
+                        margin : 0.2em 0;
+                        i{
+                            margin-right : 0.3em;
+                        }
+                    }
+                }
+                .my-outlet{
+                    background-color: white;
+                    padding: 0.5em;
+                    p{
+                        color: darken($bg_green_color,20%);
+                    }
+                }
+            }
+            
+        }
+
+    }
+    .menus{
+        animation: slideLeft 0.5 ease-in-out;
+        width : 1000px;
+        height  : 100vh;
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        grid-template-rows: 1fr 9fr;
+        h1{
+            grid-row-start: 0;
+            grid-row-end: 1;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        .list{
+            width : 350px;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            height: 89vh;
+            overflow: auto;
+            .single-menu{
+                width : 300px;
+                position: relative;
+                margin: 1em 0;
+                cursor: pointer;
+                transition: all 0.5s;
+                -webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.28);
+                -moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.28);
+                box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.28);
+                &:hover{
+                    
+                    transform: translateY(-5px);
+                    
+                }
+                &:active{
+                    transform: translateY(5px);
+                }
+                img{
+                    width : 300px;
+                    height : 200px;
+                }
+                .active-menu{
+                    position: absolute;
+                    width : 300px;
+                    height : 200px;
+                    top : 0;
+                    left: 0;
+                    transform: translateX(0);
+                    background-color: rgba($bg_green_color,0.7);
+                    i{
+                        position: absolute;
+                        top : 50%;
+                        left : 50%;
+                        transform: translate(-50%,-50%);
+                        color: white;
+                        font-size: 5em;
+                    }
+                }
+                .info{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 0.4em 0;
+                    padding : 0.3em 0.2em;
+                    h4{
+                        font-family: $para_font;
+                        font-size: 1.4em;
+                        color: darken($bg_yellow_color,20%);
+                    }
+                    .type{
+                        color: $bg_light_color;
+                    }
+                }
+            }
+            
+        }
+        .items{
+            width: 100%;
+            height: 89vh;
+            overflow: auto;
+            padding: 0 1em;
+            .item-list{
+                width : 100%;
+                img {
+                    width : 100%;
+                    height: 300px;
+                    object-fit: cover;
+                    object-position: top;
+                    
+                }
+                h2{
+                    font-family: $heading_font_1;
+                    color: darken($bg_green_color,20%);
+                }
+                .menu-info{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    h2{
+                        min-width: 200px;
+                    }
+                }
+                .all-items{
+                    margin-top : 1em;
+                    .single-item{
+                        width : 100%;
+                        display: flex;
+                        justify-content: space-evenly;
+                        align-items: center;
+                        margin: 0.5em 0;
+                        img{
+                            height :100px;
+                            width : 100px;
+                            object-fit: cover;
+                            border-radius: 50%;
+                        }
+                        h4{
+                            font-family: $cursive_font;
+                            color: $bg_danger_color;
+                            font-size: 1.5em;
+                            letter-spacing: 1px;
+                        }
+                        .price{
+                            font-family: $heading_font_1;
+                            color: darken($bg_green_color,10%);
+                            font-size: 1.2em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

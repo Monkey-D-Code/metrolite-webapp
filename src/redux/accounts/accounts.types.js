@@ -1,0 +1,13 @@
+const accountsTypes = {
+    AUTH_TOKEN_START : 'AUTH_TOKEN_START',
+    AUTH_TOKEN_SUCCESS : 'AUTH_TOKEN_SUCCESS',
+    AUTH_TOKEN_ERROR : 'AUTH_TOKEN_ERROR',
+
+    USER_START : 'USER_START',
+    USER_SUCCESS : 'USER_SUCCESS',
+    USER_ERROR : 'USER_ERROR',
+
+    USER_LOGOUT : 'USER_LOGOUT',
+}
+
+export default accountsTypes;

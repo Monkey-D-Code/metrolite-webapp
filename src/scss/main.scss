@@ -1,0 +1,42 @@
+// importing abstract
+@import './abstract/variables';
+@import './abstract/functions';
+@import './abstract/mixins';
+
+
+// importing base
+@import './base/typography';
+@import './base/animations';
+@import './base/base';
+
+
+
+// importing components
+@import './components/primary_button';
+@import './components/danger_button';
+@import './components/form_group';
+@import './components/profile_btn';
+@import './components/logout_btn';
+@import './components/loader';
+@import './components/error';
+@import './components/sale_cart';
+@import './components/invoice';
+@import './components/purchase_cart';
+@import './components/product_search';
+
+
+// importing layouts
+@import './layouts/navbar';
+@import './layouts/outlet';
+@import './layouts/active_outlet';
+@import './layouts/all_menus';
+@import './layouts/all_vendors';
+@import './layouts/sale_record';
+@import './layouts/purchase_records';
+
+
+// importing pages
+@import './pages/login';
+@import './pages/register';
+@import './pages/home';
+@import './pages/profile';

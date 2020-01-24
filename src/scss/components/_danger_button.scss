@@ -1,0 +1,7 @@
+.danger-button{
+    @include buttonDangerCick;
+    @include button;
+    background-color: $bg_danger_color;
+    border: none;
+    color: white;
+}

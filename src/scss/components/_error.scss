@@ -1,0 +1,10 @@
+.error{
+    width : 300px;
+    background-color: rgba($bg_danger_color,0.8);
+    padding  : 1em;
+    margin : 0.5em 0;
+    h4{
+        font-family : $para_font;
+        color : white;
+    }
+}

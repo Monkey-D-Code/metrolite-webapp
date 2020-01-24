@@ -1,0 +1,14 @@
+.primary-button{
+    @include buttonPrimaryCick;
+    @include button;
+    border: none;
+    background-image: linear-gradient(
+        to right,
+        $bg_light_color,
+        $bg_dark_color,
+    );
+    color : white;
+    
+
+    
+}

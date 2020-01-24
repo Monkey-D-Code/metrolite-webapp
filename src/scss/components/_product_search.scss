@@ -1,0 +1,21 @@
+.product-search{
+    display: flex;
+    align-items: stretch;
+    position: fixed;
+    top : 8em;
+    right: 1em;
+    input{
+        padding : 0.3em 0.4em;
+        font-size: 1em;
+        font-family: $cursive_font;
+        color : $bg_light_color;
+        border: 1px solid $bg_dark_color;
+    }
+    i{
+        background-color: $bg_dark_color;
+        color : white;
+        padding : 0.3em;
+        font-size: 1.5em;
+        border: 1px solid $bg_dark_color;
+    }
+}

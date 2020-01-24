@@ -1,0 +1,27 @@
+.profile{
+    position: relative;
+    .user-data{
+        position: absolute;
+        top : 50%;
+        left : 50%;
+        transform: translate(-50%,50%);
+        width: 300px;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        img{
+            height : 250px;
+            width : 250px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        .contact-info{
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            p{
+                color: darken($bg_green_color,20%);
+            }
+        }
+    }
+}
